@@ -1,0 +1,25 @@
+state={
+	id=93
+	name="STATE_93"
+	provinces={
+		474 535 3256 3412 3496 3556 6280 6415 6435 6520 6579 9520 11503 11543 
+	}
+	manpower=1985600
+	
+	history= {
+	
+	victory_points = {
+			3496 3
+		}
+	victory_points = {
+			6579 3 
+		}
+		owner = UKS
+		add_core_of = UKS
+		add_core_of = USR
+	}
+	
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

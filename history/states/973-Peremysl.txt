@@ -1,0 +1,25 @@
+state={
+	id=973
+	name="STATE_973"
+	provinces={
+		466 3562 9494 
+	}
+	resources={
+		oil=1.000
+	}
+	manpower=518000
+	history= {
+	
+	victory_points = {
+			3562 3 
+		}
+	
+		owner = UKS
+		add_core_of = UKS
+		add_core_of = USR
+	}
+	
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

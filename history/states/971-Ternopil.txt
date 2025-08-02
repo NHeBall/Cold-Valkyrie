@@ -1,0 +1,21 @@
+state={
+	id=971
+	name="STATE_971"
+	provinces={
+		536 572 3483 6557 9454 9558 11479 
+	}
+	manpower=1106954
+	history= {
+	
+		victory_points = {
+			9454 3 
+		}
+		owner = UKS
+		add_core_of = UKS
+		add_core_of = USR
+	}
+	
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}
