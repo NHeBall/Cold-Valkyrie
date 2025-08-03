@@ -357,3 +357,4 @@ PRB = "countries/PRB - Republic of Portugaly.txt"
 
 #ASIA
 AMA = "countries/AMA - American Military Administration of Japan.txt"
+NKO = "countries/North Korea.txt"

@@ -1197,3 +1197,7 @@ AMA = {
 	color = rgb { 20 133 237 }
 	color_ui = rgb { 87 160 255 }
 }
+NKO = {
+	color = rgb { 159 5 5 }
+	color_ui = rgb { 159 5 5 }
+}

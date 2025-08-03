@@ -1,0 +1,22 @@
+state={
+	id=976
+	name="STATE_976"
+	provinces={
+		13363
+	}
+	history= {
+	victory_points = {
+			13363 3 
+		}
+		owner = GNR
+		add_core_of = GNR
+		add_core_of = BEL
+		buildings = {
+        infrastructure = 3
+		}
+	}
+	manpower=57321
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

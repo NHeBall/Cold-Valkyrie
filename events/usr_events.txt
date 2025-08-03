@@ -1,0 +1,22 @@
+add_namespace = USR_start_events
+
+country_event = {
+	id = USR_start_events.1
+	title = USR_start_events.01.t
+	desc = USR_start_events.01.desc
+	picture = GFX_report_event_british_inspect_troops
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #Усі погляди у бік москви
+		name = USR_start_events.01.a
+		ai_chance = {
+			base = 100
+		}
+		
+		add_stability = 0.05
+		add_political_power = -20
+	}
+}
