@@ -1328,3 +1328,20 @@ sp_land_stronghold_network_collapse_workers_drafted = {
 	local_resources_factor = -0.5
 	state_production_speed_buildings_factor = -0.5
 }
+#НЕ ВИКОРИСТОВУЙТЕ МОДИФІКАТОРИ ДЛЯ ІНШИХ КРАЇН З ТЕГОМ USR! МОЖЕ ЗЛАМАТИ УРСР К ХУЯМ
+USR_grain_selection = {
+	enable = { always = yes }
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	state_resources_factor = -0.2
+	state_production_speed_buildings_factor = -0.1
+	local_manpower = -0.5
+	weekly_manpower = -2000
+}
+
+USR_population_coercion = {
+	enable = { always = yes }
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	state_resources_factor = -0.3
+	state_production_speed_buildings_factor = -0.2
+	weekly_manpower = -2500
+}

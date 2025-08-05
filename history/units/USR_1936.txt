@@ -1,0 +1,355 @@
+﻿
+division_template = {
+	name = "Prukordoniy Zagin"
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Divizya NKVS"
+	division_names_group = SOV_INF_01
+	template_counter = 104
+	regiments = {
+		irregular_infantry = { x = 0 y = 0 }
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+		irregular_infantry = { x = 0 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
+	}
+}
+
+units = {
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 525
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 525
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 525
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 418
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 525
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6474
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11670
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11670
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11670
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11437
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11437
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 488
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11504
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3520
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 476
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3457
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6593
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9566
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9461
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6727
+		division_template = "Divizya NKVS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3430
+		division_template = "Prukordoniy Zagin"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 462
+		division_template = "Prukordoniy Zagin"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6509
+		division_template = "Prukordoniy Zagin"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3511
+		division_template = "Prukordoniy Zagin"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3470
+		division_template = "Prukordoniy Zagin"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9493
+		division_template = "Prukordoniy Zagin"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+}

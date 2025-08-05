@@ -1,0 +1,869 @@
+#prerequisite
+focus_tree = {
+	id = ussr_focus
+	
+	country = {
+		factor = 0	
+		modifier = {
+			add = 10
+			tag = USR
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 20 y = 1200 }
+	
+	focus = {
+		id = USR_urgent_meeting
+		icon = GFX_focus_generic_military_mission
+		x = 23
+		y = 0
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		always = yes
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = { id = USR_start_events.1 }
+		}
+	}
+	
+	focus = {
+		id = USR_grain_procurement_plan
+		icon = GFX_focus_generic_military_mission
+		x = 23
+		y = 1
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_urgent_meeting }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			set_country_flag = grain_harvest_begun
+			mark_focus_tree_layout_dirty = yes
+			add_political_power = 100
+			add_stability = -0.05
+			custom_effect_tooltip = grain_harvest_starting
+		}
+	}
+	
+	focus = {
+		id = USR_directive_eight_seven
+		icon = GFX_focus_generic_military_mission
+		x = 23
+		y = 2
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+		allow_branch = { has_country_flag = grain_harvest_begun  }
+		prerequisite = { focus = USR_grain_procurement_plan }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = -20000
+			add_war_support = -0.05
+		}
+	}
+	
+	focus = {
+		id = USR_we_cant
+		icon = GFX_focus_generic_military_mission
+		x = 31
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_directive_eight_seven }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = -0.1
+			custom_effect_tooltip = clear_fifty_points
+		}
+	}
+	
+	focus = {
+		id = USR_we_will_do_it
+		icon = GFX_focus_generic_military_mission
+		x = 29
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_we_cant }
+		mutually_exclusive = { focus = USR_find_other_ways }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = -10000
+			custom_effect_tooltip = add_one_hundred_points
+		}
+	}
+	
+	focus = {
+		id = USR_eliminate_unreliable
+		icon = GFX_focus_generic_military_mission
+		x = 29
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_we_will_do_it }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = add_one_hundred_points
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			custom_effect_tooltip = grain_confiscation_tip
+			hidden_effect = {
+			every_owned_state = {
+			add_dynamic_modifier = {
+			modifier = USR_grain_selection
+			days = 14
+			}
+		  }
+		}
+	  }
+	}
+	focus = {
+		id = USR_take_last_one
+		icon = GFX_focus_generic_military_mission
+		x = 29
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_eliminate_unreliable }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = add_one_hundred_points
+			add_manpower = -5000
+			add_popularity = {
+			ideology = communism
+			popularity = -0.05
+			}
+			custom_effect_tooltip = population_coercion_tip
+			hidden_effect = {
+			every_owned_state = {
+			add_dynamic_modifier = {
+			modifier = USR_population_coercion
+			days = 28
+			}
+		  }
+		}
+		}
+	}
+	
+	focus = {
+		id = USR_to_attract_military_contingents
+		icon = GFX_focus_generic_military_mission
+		x = 27
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_we_will_do_it }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = add_one_hundred_points
+			army_experience = 50
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = USR_involvement_of_peoples_commissars
+		icon = GFX_focus_generic_military_mission
+		x = 27
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_to_attract_military_contingents }
+		mutually_exclusive = { focus = USR_efficiency_instead_ethics }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_efficiency_instead_ethics
+		icon = GFX_focus_generic_military_mission
+		x = 25
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_to_attract_military_contingents }
+		mutually_exclusive = { focus = USR_involvement_of_peoples_commissars }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_find_other_ways
+		icon = GFX_focus_generic_military_mission
+		x = 33
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_we_cant }
+		mutually_exclusive = { focus = USR_we_will_do_it }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_propaganda_company
+		icon = GFX_focus_generic_military_mission
+		x = 33
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_find_other_ways }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_help_local_druzhyna
+		icon = GFX_focus_generic_military_mission
+		x = 33
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_propaganda_company }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_bread_committees
+		icon = GFX_focus_generic_military_mission
+		x = 35
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_find_other_ways }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_smuggling_operation
+		icon = GFX_focus_generic_military_mission
+		x = 35
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_bread_committees }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_finally_report
+		icon = GFX_focus_generic_military_mission
+		x = 31
+		y = 7
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_help_local_druzhyna focus = USR_smuggling_operation focus = USR_take_last_one focus = USR_involvement_of_peoples_commissars focus = USR_efficiency_instead_ethics  }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = USR_we_failed
+		icon = GFX_focus_generic_military_mission
+		x = 32
+		y = 8
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_finally_report }
+		mutually_exclusive = { focus = USR_plan_exceeded }
+		available = {
+		}
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_plan_exceeded
+		icon = GFX_focus_generic_military_mission
+		x = 30
+		y = 8
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_finally_report }
+		mutually_exclusive = { focus = USR_we_failed }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_problem_haydamaks
+		icon = GFX_focus_generic_military_mission
+		x = 19
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_directive_eight_seven }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_organize_rfzu
+		icon = GFX_focus_generic_military_mission
+		x = 16
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_directive_eight_seven }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_communists_on_Lviv
+		icon = GFX_focus_generic_military_mission
+		x = 17
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_organize_rfzu }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_liquidation_of_stsiborskyi
+		icon = GFX_focus_generic_military_mission
+		x = 15
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_organize_rfzu }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_sabotage_at_lviv_factory
+		icon = GFX_focus_generic_military_mission
+		x = 16
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_communists_on_Lviv }
+		prerequisite = { focus = USR_liquidation_of_stsiborskyi }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = USR_to_recruit_collective_farmers_into_the_agent_network
+		icon = GFX_focus_generic_military_mission
+		x = 19
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_problem_haydamaks }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_nkvd_penetration_into_units
+		icon = GFX_focus_generic_military_mission
+		x = 19
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_to_recruit_collective_farmers_into_the_agent_network }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_fracture_operation
+		icon = GFX_focus_generic_military_mission
+		x = 19
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_nkvd_penetration_into_units }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_take_gang_members_hostage
+		icon = GFX_focus_generic_military_mission
+		x = 19
+		y = 7
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_fracture_operation }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_destruction_nationalist_cells
+		icon = GFX_focus_generic_military_mission
+		x = 19
+		y = 8
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_take_gang_members_hostage }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USR_meeting_cc_cpsu
+		icon = GFX_focus_generic_military_mission
+		x = 25
+		y = 10
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = USR_destruction_nationalist_cells focus = USR_plan_exceeded focus = USR_we_failed }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
+		}
+	}
+}

@@ -1,0 +1,72 @@
+ideas = {
+
+	country = {
+		unwinnable_war = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+			
+			targeted_modifier = {
+			tag = GNR
+			attack_bonus_against = 0.15
+			}
+			
+			targeted_modifier = {
+			tag = UKS
+			attack_bonus_against = 0.15
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		fourth_five_year_plan = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_infrastructure_factor = 0.10
+				local_resources_factor = -0.30
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		soviet_republic = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				stability_factor = 0.05
+				communism_drift = 0.02
+				weekly_manpower = 200
+				custom_modifier_tooltip = cannot_train_units_tt
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}

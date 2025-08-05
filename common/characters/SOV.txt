@@ -1,10 +1,10 @@
 characters = {
 
-	USR_nikita_krushchyov = {
-		name = USR_nikita_krushchyov
+	SOV_iosif_stalin = {
+		name = SOV_iosif_stalin
 		portraits = {
 			civilian = {
-				large = GFX_portrait_USR_nikita_krushchyov
+				large = GFX_portrait_SOV_joseph_stalin
 			}
 		}
 		country_leader = {

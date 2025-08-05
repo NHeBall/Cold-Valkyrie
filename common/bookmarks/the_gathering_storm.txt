@@ -16,55 +16,35 @@ bookmarks = {
 			ideology = fascism 
 			
 		}
-		"CZR"={
-			history = "CZR_COLD_VALKYRIE_DESC"
-			ideology = democratic
-			
-		}
-		"SLK"={
-			history = "SLK_COLD_VALKYRIE_DESC"
-			ideology = fascism 
-			
-		}
 		"USR"={
 			history = "USR_COLD_VALKYRIE_DESC"
 			ideology = communism
 			
 		}
-		"FFR"={
-			history = "FFR_COLD_VALKYRIE_DESC"
+		"SOV"={
+			history = "SOV_COLD_VALKYRIE_DESC"
+			ideology = communism 
+			
+		}
+		"USA"={
+			history = "USA_COLD_VALKYRIE_DESC"
+			ideology = conservatism
+			
+		}
+		"ITA"={
+			history = "ITA_COLD_VALKYRIE_DESC"
 			ideology = democratic
 			
 		}
-		"FSP"={
-			history = "FSP_COLD_VALKYRIE_DESC"
+		"FFR"={
+			history = "FFR_COLD_VALKYRIE_DESC"
 			ideology = fascism
 			
 		}
-		"ITR"={
-			history = "ITR_COLD_VALKYRIE_DESC"
+		"ENG"={
+			history = "ENG_COLD_VALKYRIE_DESC"
 			ideology = communism
-			
-		}
-		"PLR"={
-			minor = yes
-			history = "PLR_COLD_VALKYRIE_DESC"
-			ideology = fascism 
-			
-		}
-		"PSR"={
-			minor = yes
-			history = "PSR_COLD_VALKYRIE_DESC"
-			ideology = democratic
-			
-		}
-		
-		"BSR"={
-			minor = yes
-			history = "BSR_COLD_VALKYRIE_DESC"
-			ideology = communism 
 			
 		}
 	}
 }
-
