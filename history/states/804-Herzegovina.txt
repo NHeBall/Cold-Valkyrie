@@ -29,5 +29,10 @@ state={
 		953 6942 9894 11845 
 	}
 
+	YUG = {
+			set_province_controller = 953
+			
+			}
+
 	local_supplies=0.0 
 }

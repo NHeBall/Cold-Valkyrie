@@ -85,10 +85,19 @@ set_popularities = {
 	communism = 34
 }
 
-recruit_character = MNT_kristo_popovic
-recruit_character = MNT_blazo_jovanovic
-recruit_character = MNT_blazo_dukanovic
+declare_war_on = {
+		target = YUG
+		type = annex_everything 
+	}
 
+declare_war_on = {
+		target = SER
+		type = annex_everything 
+	}
 
+declare_war_on = {
+		target = CRO
+		type = annex_everything 
+	}
 
 

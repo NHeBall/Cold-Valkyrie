@@ -67,7 +67,7 @@ division_template = {
 
 units = {
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 6970
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -75,15 +75,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
-		location = 6953
-		division_template = "Pesadijska Divizija"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
-	}
-	
-	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 6998
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -91,7 +83,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"    			
 		location = 9602
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -99,7 +91,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"    			
 		location = 9756
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -107,7 +99,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"    			
 		location = 11858
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -115,7 +107,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 6913
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -123,7 +115,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 982
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -131,7 +123,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 11741
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -139,7 +131,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 606
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -147,15 +139,15 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
-		location = 6799
+		name = "Partizanska Divizija"  			
+		location = 9591
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 11574
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -163,7 +155,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 6957
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -171,7 +163,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 11586
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -179,7 +171,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 9586
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -187,15 +179,15 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
-		location = 6983
+		name = "Partizanska Divizija"  			
+		location = 9588
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 9922
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -203,7 +195,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 11872
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -211,7 +203,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 953
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -219,15 +211,15 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
-		location = 11845
+		name = "Partizanska Divizija"  			
+		location = 6619
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 3974
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -235,7 +227,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 984
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -243,7 +235,7 @@ units = {
 	}
 
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 6611
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -251,7 +243,7 @@ units = {
 	}
 
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 591
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -259,7 +251,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 3601
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -267,15 +259,7 @@ units = {
 	}
 
 	division = {
-		name = "Partizanska Dyvizija"  			
-		location = 13252
-		division_template = "Pesadijska Divizija"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
-	}
-
-	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 3592
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -283,7 +267,7 @@ units = {
 	}
 
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 3596
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -291,7 +275,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 11594
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -299,7 +283,7 @@ units = {
 	}
 
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 3627
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -307,7 +291,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 3609
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -315,7 +299,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 11583
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -323,7 +307,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 6634
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -331,7 +315,7 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 3956
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
@@ -339,14 +323,12 @@ units = {
 	}
 	
 	division = {
-		name = "Partizanska Dyvizija"  			
+		name = "Partizanska Divizija"  			
 		location = 3984
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-	}
-	
-
+	}	
 }
 
 ### Starting Production ###

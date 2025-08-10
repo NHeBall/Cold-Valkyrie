@@ -157,7 +157,7 @@ division = {
 	
 division = {
 		name = "Chetniki"  			
-		location = 3939
+		location = 6953
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3

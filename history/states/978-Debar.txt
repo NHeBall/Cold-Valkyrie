@@ -1,0 +1,25 @@
+state={
+	id=978
+	name="STATE_978"
+	provinces={
+		867
+		833
+		11856 
+	}
+	state_category = rural
+	history={
+		victory_points = {
+			867 2
+		}
+		owner = ALB
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ALB
+		add_core_of = MAC
+		add_core_of = BUL
+	}
+	manpower=33400
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

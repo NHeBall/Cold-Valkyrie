@@ -23,5 +23,13 @@ state={
 		624 3592 3596 3627 6647 9595 9611 11577 11580 11581 11594
 	}
 
+	YUG = {
+			set_province_controller = 11594
+			set_province_controller = 3627
+			set_province_controller = 3596
+			set_province_controller = 3592
+			
+			}
+
 	local_supplies=0.0 
 }
