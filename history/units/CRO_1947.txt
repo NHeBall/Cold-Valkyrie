@@ -59,7 +59,7 @@ division = {
 		location = 11581
 		division_template = "Pjesacka divizija"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 	}
 	
 division = {
@@ -70,7 +70,7 @@ division = {
 		location = 11581
 		division_template = "Pjesacka divizija"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 	}
 	
 division = {
@@ -112,8 +112,8 @@ division = {
 		}  			
 		location = 6942
 		division_template = "Gorske Pjesastvo"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6
 	}
 division = {
 		division_name = {
@@ -122,8 +122,8 @@ division = {
 		}  	  			
 		location = 9894
 		division_template = "Gorske Pjesastvo"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
 	}
 division = {
 		division_name = {

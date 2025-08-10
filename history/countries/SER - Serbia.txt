@@ -1,5 +1,11 @@
 ﻿capital = 107
 
+add_ideas = {
+	scraping_the_barrel
+	tot_economic_mobilisation
+	closed_economy
+}
+
 oob = "SER_1947"
 
 set_research_slots = 3
@@ -78,55 +84,15 @@ set_politics = {
 	election_frequency = 36
 	elections_allowed = yes
 }
+
 set_popularities = {
-	democratic = 20
-	fascism = 30
-	communism = 20
-	neutrality = 30
-}
-
-create_country_leader = {
-	name = "Draza Mihailovic"
-	desc = ""
-	picture = GFX_portrait_Draza_Mihailovic
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Milan Nedic"
-	desc = ""
-	picture = GFX_portrait_Milan_Nedic
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Peter Karadordevic"
-	desc = ""
-	picture = GFX_portrait_Peter_Karadordevic
-	expire = "1965.1.1"
-	ideology = Despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Zivorad Jovanovic"
-	desc = ""
-	picture = GFX_portrait_Zivorad_Jovanovic
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
+	democratic = 0
+	liberalism = 0
+	conservatism = 5
+	fascism = 25
+	socialism = 2
+	communism = 3
+	neutrality = 65
 }
 
 declare_war_on = {

@@ -18,6 +18,14 @@ state={
 		add_core_of = YUG
 		add_core_of = SER
 
+		1946.8.25 = {
+			YUG = {
+					set_province_controller = 9756
+					set_province_controller = 9602
+					set_province_controller = 6998
+					set_province_controller = 6970
+					}
+			}
 	}
 
 	provinces={

@@ -66,8 +66,8 @@ ROM = {
 	color_ui = rgb { 255 255 120 }
 }
 YUG = {
-	color = rgb { 72 73 126 }
-	color_ui = rgb { 94 95 164 }
+	color = rgb { 142 75 98 }
+	color_ui = rgb { 142 75 98 }
 }
 SWI = {
 	color = rgb { 224 5 5 }
@@ -304,8 +304,8 @@ RAJ = {
 }
 
 CRO = {
-	color = rgb { 230  70  180 }
-	color_ui = rgb { 230 255 122 }
+	color = rgb { 255  198  226 }
+	color_ui = rgb { 255 198 226 }
 }
 
 PRC = {
@@ -359,8 +359,8 @@ SYR = {
 }
 
 SER = {
-	color = rgb { 160 110 110 }
-	color_ui = rgb { 160 110 110 }
+	color = rgb { 29 37 86 }
+	color_ui = rgb { 29 37 86 }
 }
 
 ICE = {
@@ -414,8 +414,8 @@ MAL = {
 }
 
 MNT = {
-	color = rgb { 77  90  105 }
-	color_ui = rgb { 77  90  105 }
+	color = rgb { 67  94  113 }
+	color_ui = rgb { 114  160  193 }
 }
 
 BSR = {

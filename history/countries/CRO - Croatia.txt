@@ -1,5 +1,11 @@
 ﻿capital = 109
 
+add_ideas = { 
+	extensive_conscription
+	war_economy
+	closed_economy
+}
+
 set_research_slots = 2
 
 oob = "CRO_1947"
@@ -48,9 +54,13 @@ set_politics = {
 	elections_allowed = no # none after offset 1
 }
 set_popularities = {
-	democratic = 15
-	fascism = 75
-	communism = 10
+	democratic = 10
+	liberalism = 1
+	conservatism = 2
+	fascism = 55
+	socialism = 15
+	communism = 15
+	neutrality = 2
 }
 
 declare_war_on = {

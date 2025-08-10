@@ -1,5 +1,11 @@
 ﻿capital = 107
 
+add_ideas = {
+	service_by_requirement
+	war_economy
+	closed_economy
+}
+
 oob = "YUG_1947"
 
 set_research_slots = 3
@@ -71,16 +77,19 @@ if = {
 set_convoys = 10
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = communism
 	last_election = "1935.5.3"
 	election_frequency = 36
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 15
-	fascism = 10
-	communism = 15
-	neutrality = 60
+	democratic = 8
+	liberalism = 1
+	conservatism = 2
+	fascism = 1
+	socialism = 20
+	communism = 67
+	neutrality = 1
 }
 
 declare_war_on = {
