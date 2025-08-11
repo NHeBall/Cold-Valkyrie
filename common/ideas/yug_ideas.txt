@@ -1,0 +1,22 @@
+ideas = { 
+	
+	country = {
+		until_death = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				 	surrender_limit = 10
+					war_support_factor = 0.1
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}

@@ -4,6 +4,7 @@ add_ideas = {
 	service_by_requirement
 	war_economy
 	closed_economy
+	until_death
 }
 
 oob = "YUG_1947"

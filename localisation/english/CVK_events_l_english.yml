@@ -1,0 +1,21 @@
+﻿l_english:
+
+# Чорногорія впала
+YUG_civilwar.01.t: "Montenegro Falls!"
+YUG_civilwar.01.d: "After a battle for the capital of Montenegro, Podgorica, ended in a victory for our troops, a representative of the Montenegrin government has signed an official instrument of surrender in the early hours of this morning. All Montenegrin soldiers have reportedly been instructed to surrender to our forces when spotted, which entails a laydown of arms."
+YUG_civilwar.01.a: "Onwards, to victory!"
+
+# Сербія впала
+YUG_civilwar.02.t: "Serbia Falls!"
+YUG_civilwar.02.d: "With the last remaining resistance in Serbia reportedly having been quashed by our forces, a representative of the remnants of the Serbian government has signed an official instrument of surrender in the early hours of this morning. All Serbian soldiers have reportedly been instructed to surrender to our forces when spotted, which entails a laydown of arms."
+YUG_civilwar.02.a: "Onwards, to victory!"
+
+# Хорватія впала
+YUG_civilwar.03.t: "Croatia Falls!"
+YUG_civilwar.03.d: "With the last units of the Ustase having been defeated in battle, our forces can safely conclude that any and all resistance by the Independent State of Croatia is no longer considered war. Croatia can now be considered as territory fully under our control."
+YUG_civilwar.03.a: "Onwards, to victory!"
+
+# Партизани впали
+YUG_civilwar.04.t: "The Partisans Fall!"
+YUG_civilwar.04.d: "In a movement thought impossible, after a prolonged battle at a command and control center of the remaining Partisans left in former Yugoslavia, our soldiers found the leadership of the Yugoslav Partisans dead in a bunker. Partisan guerilla warfare still continues, but we can safely say that a central Partisan government is now fully destroyed."
+YUG_civilwar.04.a: "Onwards, to victory!"

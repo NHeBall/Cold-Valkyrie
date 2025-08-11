@@ -1,0 +1,58 @@
+### Лише для громадянську війну в Югославії
+add_namespace = YUG_civilwar
+
+country_event = {
+	id = YUG_civilwar.01
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG_civilwar.01"}
+ 	title = YUG_civilwar.01.t
+ 	desc = YUG_civilwar.01.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+ 	option = {
+ 		name = YUG_civilwar.01.a
+	}
+}
+
+country_event = {
+	id = YUG_civilwar.02
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG_civilwar.02"}
+ 	title = YUG_civilwar.02.t
+ 	desc = YUG_civilwar.02.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+ 	option = {
+ 		name = YUG_civilwar.02.a
+	}
+}
+
+country_event = {
+	id = YUG_civilwar.03
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG_civilwar.02"}
+ 	title = YUG_civilwar.03.t
+ 	desc = YUG_civilwar.03.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+ 	option = {
+ 		name = YUG_civilwar.03.a
+	}
+}
+
+country_event = {
+	id = YUG_civilwar.04
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG_civilwar.02"}
+ 	title = YUG_civilwar.04.t
+ 	desc = YUG_civilwar.04.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+ 	option = {
+ 		name = YUG_civilwar.04.a
+	}
+}

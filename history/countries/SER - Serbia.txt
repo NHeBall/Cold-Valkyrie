@@ -4,15 +4,12 @@ add_ideas = {
 	scraping_the_barrel
 	tot_economic_mobilisation
 	closed_economy
+	until_death
 }
 
 oob = "SER_1947"
 
 set_research_slots = 3
-
-add_ideas = {
-	anti_german_military
-}
 
 set_technology = {
 	tech_support = 1		

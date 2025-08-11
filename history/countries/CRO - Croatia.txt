@@ -4,6 +4,7 @@ add_ideas = {
 	extensive_conscription
 	war_economy
 	closed_economy
+	until_death
 }
 
 set_research_slots = 2

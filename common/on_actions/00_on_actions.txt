@@ -1,0 +1,111 @@
+# FROM = переможець
+# ROOT = невдаха
+
+on_actions = {
+	on_capitulation = {	
+		effect = {
+			if = {
+				#Югославська громадянська війна - Чорногорія
+				if = {
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = CRO
+								original_tag = SER
+								original_tag = YUG
+							}
+						}
+						ROOT = {
+							original_tag = MNT
+						}
+					}
+
+					FROM = {
+						white_peace = ROOT
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+						country_event = { id = YUG_civilwar.01 }
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				#Югославська громадянська війна - Сербія
+				if = {
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = CRO
+								original_tag = MNT
+								original_tag = YUG
+							}
+						}
+						ROOT = {
+							original_tag = SER
+						}
+					}
+
+					FROM = {
+						white_peace = ROOT
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+						country_event = { id = YUG_civilwar.02 }
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				#Югославська громадянська війна - Хорватія
+				if = {
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = SER
+								original_tag = MNT
+								original_tag = YUG
+							}
+						}
+						ROOT = {
+							original_tag = CRO
+						}
+					}
+
+					FROM = {
+						white_peace = ROOT
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+						country_event = { id = YUG_civilwar.03 }
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				#Югославська громадянська війна - Югославське Партизани
+				if = {
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = SER
+								original_tag = MNT
+								original_tag = CRO
+							}
+						}
+						ROOT = {
+							original_tag = YUG
+						}
+					}
+
+					FROM = {
+						white_peace = ROOT
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+						country_event = { id = YUG_civilwar.04 }
+					}
+					set_global_flag = skip_default_capitulation
+				}
+			}
+		}
+	}
+}
