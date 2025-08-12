@@ -1,0 +1,15 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_news_event_partisan_civilwar"
+		texturefile = "gfx/event_pictures/news_event_partisan_civilwar.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_ustasa_civilwar"
+		texturefile = "gfx/event_pictures/news_event_ustasa_civilwar.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_cetnik_civilwar"
+		texturefile = "gfx/event_pictures/news_event_cetnik_civilwar.dds"
+	}
+}

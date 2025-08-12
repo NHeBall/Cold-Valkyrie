@@ -365,8 +365,8 @@
  YUG_democratic_DEF:0 "the Yugoslavian Confederation"
  YUG_neutrality: "Yugoslavia"
  YUG_neutrality_DEF: "the Kingdom of Yugoslavia"
- YUG_communism:0 "SFR Yugoslavia"
- YUG_communism_DEF:0 "SFR Yugoslavia"
+ YUG_communism:0 "Yugoslavske Partizane"
+ YUG_communism_DEF:0 "the Yugoslav Partisans"
  YUG_fascism_ADJ:0 "Yugoslavian"
  YUG_democratic_ADJ:0 "Yugoslavian"
  YUG_neutrality_ADJ:0 "Yugoslavian"
@@ -5009,3 +5009,15 @@
 USR: "Ukrainian SSR"
 PLR: "Bialystok District"
 PSR: "Polish Republic"
+
+SER_croatian_occupation: "Vojna Administracija Srbije"
+SER_croatian_occupation_DEF: "the Croatian Military Administration of Serbia"
+SER_croatian_occupation_ADJ: "Serbian"
+
+CRO_serbian_occupation: "Srpska Vojska u Hrvatskoj"
+CRO_serbian_occupation_DEF: "the Serbian Military Administration of Croatia"
+CRO_serbian_occupation_ADJ: "Croatian"
+
+YUG_civilwar_won: "Socialist Federal Republic of Yugoslavia"
+YUG_civilwar_won_DEF: "the Socialist Federal Republic of Yugoslavia"
+YUG_civilwar_won_ADJ: "Yugoslavian"

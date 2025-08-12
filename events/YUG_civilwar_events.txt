@@ -1,6 +1,6 @@
 ### Лише для громадянську війну в Югославії
 add_namespace = YUG_civilwar
-
+# Чорногорія
 country_event = {
 	id = YUG_civilwar.01
 	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG_civilwar.01"}
@@ -14,7 +14,7 @@ country_event = {
  		name = YUG_civilwar.01.a
 	}
 }
-
+# Сербія 
 country_event = {
 	id = YUG_civilwar.02
 	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG_civilwar.02"}
@@ -28,10 +28,10 @@ country_event = {
  		name = YUG_civilwar.02.a
 	}
 }
-
+# Хорватія
 country_event = {
 	id = YUG_civilwar.03
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG_civilwar.02"}
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG_civilwar.03"}
  	title = YUG_civilwar.03.t
  	desc = YUG_civilwar.03.d
 
@@ -42,10 +42,10 @@ country_event = {
  		name = YUG_civilwar.03.a
 	}
 }
-
+# Партизани
 country_event = {
 	id = YUG_civilwar.04
-	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG_civilwar.02"}
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG_civilwar.04"}
  	title = YUG_civilwar.04.t
  	desc = YUG_civilwar.04.d
 
@@ -55,4 +55,214 @@ country_event = {
  	option = {
  		name = YUG_civilwar.04.a
 	}
+}
+
+# Перемога - партизани
+country_event = {
+	id = YUG_civilwar.05
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG_civilwar.05"}
+ 	title = YUG_civilwar.05.t
+ 	desc = YUG_civilwar.05.d
+
+	trigger = {
+		tag = YUG
+	 	CRO = { exists = no }
+	 	SER = { exists = no }
+	 	MNT = { exists = no }
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+ 	option = {
+ 		name = YUG_civilwar.05.a
+		 hidden_effect = {
+			set_cosmetic_tag = YUG_civilwar_won
+			news_event = { id = YUG_civilwar.100 hours = 6}
+			set_global_flag = YUG_won_civilwar
+			}
+	}
+}
+
+# Перемога - хорвати
+country_event = {
+	id = YUG_civilwar.06
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG_civilwar.06"}
+ 	title = YUG_civilwar.06.t
+ 	desc = YUG_civilwar.06.d
+
+	trigger = {
+		tag = CRO
+	 	YUG = { exists = no }
+	 	SER = { exists = no }
+	 	MNT = { exists = no }
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+ 	option = {
+ 		name = YUG_civilwar.06.a
+		custom_effect_tooltip = yug_civilwar.06.a.tt
+
+		hidden_effect = {
+					
+			remove_ideas = until_death
+
+			SER = { 
+				transfer_state = 764
+				transfer_state = 108
+				transfer_state = 107
+				
+				remove_ideas = until_death
+
+				set_cosmetic_tag = SER_croatian_occupation
+				
+				set_party_name = {
+					ideology = fascism
+					long_name = SER_croatian_occupation_party_long
+					name = SER_croatian_occupation_party
+				}
+				
+				set_popularities = { 
+						democratic = 1
+						neutrality = 3
+						fascism = 95
+						communism = 1
+				}
+				
+				set_autonomy = { 
+					target = SER 
+					autonomy_state = autonomy_integrated_puppet 
+				}
+			}
+			
+			release = MNT
+
+			news_event = { id = YUG_civilwar.101 
+							hours = 6
+			}
+			set_global_flag = CRO_won_civilwar
+			}
+	}
+}
+
+# Перемога - серби
+country_event = {
+	id = YUG_civilwar.07
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG_civilwar.07"}
+ 	title = YUG_civilwar.07.t
+ 	desc = YUG_civilwar.07.d
+
+	trigger = {
+		tag = SER
+	 	YUG = { exists = no }
+	 	CRO = { exists = no }
+	 	MNT = { exists = no }
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+ 	option = {
+ 		name = YUG_civilwar.07.a
+		
+		hidden_effect = {
+					
+			remove_ideas = until_death
+
+			CRO = { 
+				transfer_state = 109
+				transfer_state = 103
+				transfer_state = 163
+				transfer_state = 804
+				
+				remove_ideas = until_death
+
+				set_cosmetic_tag = CRO_serbian_occupation
+				
+				set_party_name = {
+					ideology = fascism
+					long_name = CRO_serbian_occupation_party_long
+					name = CRO_serbian_occupation_party
+				}
+				
+				set_popularities = { 
+						democratic = 1
+						neutrality = 3
+						fascism = 95
+						communism = 1
+				}
+				
+				set_autonomy = { 
+					target = CRO 
+					autonomy_state = autonomy_integrated_puppet 
+				}
+			}
+			
+			105 = {
+				add_core_of = SER
+			}
+			
+			news_event = { id = YUG_civilwar.102 hours = 6}
+		set_global_flag = SER_won_civilwar
+		}
+	}
+}
+
+## НОВИНИ ##
+
+# Партизани
+news_event = { 
+    id = YUG_civilwar.100
+    title = YUG_civilwar.100.t
+    desc = YUG_civilwar.100.desc
+	picture = GFX_news_event_partisan_civilwar
+    
+    is_triggered_only = yes
+    major = yes
+    
+    option = {
+        name = YUG_civilwar.100.a
+    }
+}
+
+# Хорватія
+news_event = { 
+    id = YUG_civilwar.101
+    title = YUG_civilwar.101.t
+    desc = YUG_civilwar.101.desc
+	picture = GFX_news_event_ustasa_civilwar
+    
+    is_triggered_only = yes
+    major = yes
+    
+    option = {
+        name = YUG_civilwar.101.a
+    }
+}
+
+# Сербія
+news_event = { 
+    id = YUG_civilwar.102
+    title = YUG_civilwar.102.t
+    desc = YUG_civilwar.102.desc
+    picture = GFX_news_event_cetnik_civilwar
+
+    is_triggered_only = yes
+    major = yes
+    
+    option = {
+        name = YUG_civilwar.102.a
+    }
 }

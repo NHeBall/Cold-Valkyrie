@@ -1399,7 +1399,12 @@
 
  RAA_fascism_party: "NSDAP"
  RAA_fascism_party_long: "Nationalsozialistische Deutsche Arbeiterpartei"
+ 
+ SER_croatian_occupation_party: "HVAS"
+ SER_croatian_occupation_party_long: "Hrvatska Vojna Administracija Srbije"
 
+CRO_serbian_occupation_party: "VSuH"
+CRO_serbian_occupation_party_long: "Vojna Srbije u Hrvatskoj"
 
 
 

@@ -19,3 +19,20 @@ YUG_civilwar.03.a: "Onwards, to victory!"
 YUG_civilwar.04.t: "The Partisans Fall!"
 YUG_civilwar.04.d: "In a movement thought impossible, after a prolonged battle at a command and control center of the remaining Partisans left in former Yugoslavia, our soldiers found the leadership of the Yugoslav Partisans dead in a bunker. Partisan guerilla warfare still continues, but we can safely say that a central Partisan government is now fully destroyed."
 YUG_civilwar.04.a: "Onwards, to victory!"
+
+## ПІСЛЯ ПЕРЕМОГИ ##
+# Партизани
+YUG_civilwar.05.t: "Victory"
+YUG_civilwar.05.d: "Now that no one stands against us, apart from disorganised and infrequent resistance, we can safely conclude that we have militarily won the Yugoslav civil war. After so many years. We must now focus on rebuilding, and to publish this declaration as soon as necessary."
+YUG_civilwar.05.a: "Uz maršala Tita!"
+
+# Хорватія
+YUG_civilwar.06.t: "Victory"
+YUG_civilwar.06.d: "We have defeated any and all remnants of central government resistance, Partisan, Serbian, or Montenegrin alike. However, our central government cannot be responsible for territories beyond Croatia and Bosnia. As such, a military administration is to be created in former Serbian territories.\n\nWe have also reached an agreement with imprisoned Montengrin remnants of the old government, stating that Montenegro will receive independence for protection of the local Croatian minority."
+YUG_civilwar.06.a: "Evo zore, evo dana!"
+yug_civilwar.06.a.tt: "This will create an integrated puppet regime in all formerly Serbian territory, while also releasing Montenegro.\n\nOur national spirit for surrender limits will also be removed."
+
+# Сербія
+YUG_civilwar.07.t: "Victory"
+YUG_civilwar.07.d: "Despite our fickle chances from the Dinars and from a low point of Belgrade's fall, we have managed to claw victory from the jaws of defeat. We are to announce this at once, but not without the creation of a military regime in Croatian territories, in order to pacify them and avenge our fallen."
+YUG_civilwar.07.a: "Sloboda ili smrt!"
