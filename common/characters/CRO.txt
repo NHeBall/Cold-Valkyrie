@@ -1,0 +1,17 @@
+characters = {
+
+	CRO_ante_pavelic = {
+		name = CRO_ante_pavelic
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CRO_ante_pavelic
+			}
+		}
+	country_leader = {
+		ideology = fascism_gen
+			expire = "1960.3.1"
+			id = -1
+			traits = { }
+		}
+	}
+}

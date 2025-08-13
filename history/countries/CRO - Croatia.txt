@@ -4,7 +4,11 @@ add_ideas = {
 	extensive_conscription
 	war_economy
 	closed_economy
-	until_death
+}
+
+add_timed_idea = {
+	idea = until_death
+	days = 720
 }
 
 set_research_slots = 2
@@ -64,6 +68,8 @@ set_popularities = {
 	neutrality = 2
 }
 
+recruit_character = CRO_ante_pavelic
+
 declare_war_on = {
 		target = YUG
 		type = annex_everything 
@@ -79,13 +85,6 @@ declare_war_on = {
 		type = annex_everything 
 	}
 
-recruit_character = CRO_ante_pavelic
-recruit_character = CRO_vladko_macek
-recruit_character = CRO_nikola_mandic
-recruit_character = CRO_joseph_francis
-recruit_character = CRO_duro_jakcin
-recruit_character = CRO_slavko_kvaternik
-recruit_character = CRO_miroslav_navratil
 
 
 

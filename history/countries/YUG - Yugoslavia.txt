@@ -4,7 +4,11 @@ add_ideas = {
 	service_by_requirement
 	war_economy
 	closed_economy
-	until_death
+}
+
+add_timed_idea = {
+	idea = until_death
+	days = 720
 }
 
 oob = "YUG_1947"
@@ -78,18 +82,18 @@ if = {
 set_convoys = 10
 
 set_politics = {
-	ruling_party = communism
-	last_election = "1935.5.3"
+	ruling_party = socialism
+	last_election = "1941.1.3"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 8
 	liberalism = 1
 	conservatism = 2
 	fascism = 1
-	socialism = 20
-	communism = 67
+	socialism = 67
+	communism = 20
 	neutrality = 1
 }
 
@@ -107,5 +111,7 @@ declare_war_on = {
 		target = MNT
 		type = annex_everything 
 	}
+
+recruit_character = YUG_josip_broz_tito
 
 set_stability = 0.6

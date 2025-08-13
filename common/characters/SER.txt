@@ -1,0 +1,34 @@
+characters = {
+
+	SER_draza_mihailovic = {
+		name = SER_draza_mihailovic
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SER_draza_mihailovic
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1960.3.1"
+			id = -1
+			traits = { }
+		}
+	}
+
+	SER_peter_ii_karadordevic = {
+		name = SER_peter_ii_karadordevic
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SER_peter_ii_karadordevic
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1960.3.1"
+			id = -1
+			traits = { }
+		}
+	}
+
+}
+	

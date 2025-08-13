@@ -4,7 +4,11 @@ add_ideas = {
 	scraping_the_barrel
 	tot_economic_mobilisation
 	closed_economy
-	until_death
+}
+
+add_timed_idea = {
+	idea = until_death
+	days = 720
 }
 
 oob = "SER_1947"
@@ -76,21 +80,24 @@ if = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
+	ruling_party = fascism
+	last_election = "1941.1.3"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
 	democratic = 0
 	liberalism = 0
 	conservatism = 5
-	fascism = 25
+	fascism = 65
 	socialism = 2
 	communism = 3
-	neutrality = 65
+	neutrality = 25
 }
+
+recruit_character = SER_draza_mihailovic
+recruit_character = SER_peter_ii_karadordevic
 
 declare_war_on = {
 		target = YUG

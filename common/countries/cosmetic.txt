@@ -10,7 +10,3 @@ SER_croatian_occupation = {
 	color = rgb { 255  198  226 }
 	color_ui = rgb { 255 198 226 }
 }
-CRO_serbian_occupation = { 
-	color = rgb { 29 37 86 }
-	color_ui = rgb { 29 37 86 }
-}

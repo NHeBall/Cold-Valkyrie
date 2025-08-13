@@ -34,5 +34,6 @@ yug_civilwar.06.a.tt: "This will create an integrated puppet regime in all forme
 
 # Сербія
 YUG_civilwar.07.t: "Victory"
-YUG_civilwar.07.d: "Despite our fickle chances from the Dinars and from a low point of Belgrade's fall, we have managed to claw victory from the jaws of defeat. We are to announce this at once, but not without the creation of a military regime in Croatian territories, in order to pacify them and avenge our fallen."
+YUG_civilwar.07.d: "Despite our fickle chances from the Dinars and from a low point of Belgrade's fall, we have managed to claw victory from the jaws of defeat. The royal family, forced to flee to London during the war, have accepted our invitation to become rulers of Yugoslavia once again."
 YUG_civilwar.07.a: "Sloboda ili smrt!"
+yug_civilwar.07.a.tt: "Our leadership will change to one ruled by the Karađorđević dynasty of Yugoslavia, while giving us cores on Bosnia and claims on Croatian-majority territory.\n\nOur national spirit for surrender limits will also be removed."

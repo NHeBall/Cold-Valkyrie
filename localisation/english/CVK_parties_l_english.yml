@@ -21,6 +21,17 @@
  fascism_desc:0 "Totalitarian Regime"
  communism_desc:0 "Totalitarian Regime"
  democratic_desc:0 "Democratic Regime"
+ socialism:0 "Socialist"
+ socialism_noun:0 "Socialism"
+ socialism_desc:0 "Authoritarian Regime"
+ liberalism:0 "Liberal"
+ liberalism_noun:0 "Liberalism"
+ liberalism_desc:0 "Democratic Regime"
+ conservatism:0 "Conservative"
+ conservatism_noun:0 "Conservatism"
+ conservatism_desc:0 "Democratic Regime"
+ 
+
  nationalism:0 "Nationalism"
  nationalism_noun:0 "Nationalism"
  nationalism_desc:0 "Nationalist Regime"
@@ -30,12 +41,6 @@
  national_socialism:0 "National - Socialism"
  national_socialism_noun:0 "National - Socialism"
  national_socialism_desc:0 "National - Socialist Regime"
- conservatism:0 "Conservatism"
- conservatism_desc:0 "Considering rapid changes to society to be potentially harmful, conservatism espouses tradition and moderate reforms, sometimes advocating a return to old moral values."
- liberalism:0 "Liberalism"
- liberalism_desc:0 "With a long philosophical tradition of valuing personal liberty, liberalism views safeguarding these rights as the primary function of the state."
- socialism:0 "Socialism"
- socialism_desc:0 "Striving for equality and a socialist state by reformist means, democratic socialism aims to abolish or mitigate the effects of capitalism with public mandate."
  marxism:0 "Marxism"
  marxism_desc:0 "Encompassing a broad spectrum of economic and historical views, Marxist politics seek to apply the theories of Karl Marx to political practice. Class struggle and the need for transition to a society based on common ownership of the means of production characterize these ideologies."
  leninism:0 "Leninism"
@@ -1401,10 +1406,12 @@
  RAA_fascism_party_long: "Nationalsozialistische Deutsche Arbeiterpartei"
  
  SER_croatian_occupation_party: "HVAS"
- SER_croatian_occupation_party_long: "Hrvatska Vojna Administracija Srbije"
+ SER_croatian_occupation_party_long: "Hrvatska Vojska Administracija Srbije"
 
-CRO_serbian_occupation_party: "VSuH"
-CRO_serbian_occupation_party_long: "Vojna Srbije u Hrvatskoj"
+ SER_civilwar_won_party: "The Karađorđević Throne"
+ SER_civilwar_won_party_long: "The Karađorđević Throne"
+
+
 
 
 

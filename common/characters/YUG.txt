@@ -1,0 +1,17 @@
+characters = {
+
+	YUG_josip_broz_tito = {
+		name = YUG_josip_broz_tito
+		portraits = {
+			civilian = {
+				large = GFX_portrait_YUG_josip_broz
+			}
+		}
+	country_leader = {
+		ideology = marxism
+			expire = "1960.3.1"
+			id = -1
+			traits = { }
+		}
+	}
+}

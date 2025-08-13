@@ -8869,6 +8869,27 @@ spriteTypes = {
 		name = "GFX_portrait_FSR_otto_kuusisen"     		 			  
 		texturefile = "gfx/leaders/FSR/Portrait_FSR_Otto_Kuusisen.dds"  
 	}
+	#SER, Петро ІІ якщо є перемога
+	SpriteType = {  
+		name = "GFX_portrait_SER_peter_ii_karadordevic"     		 			  
+		texturefile = "gfx/leaders/SER/Portrait_SER_Peter_II_Karadordevic.dds"  
+	}
+	#YUG - перший Тіто
+	SpriteType = {  
+		name = "GFX_portrait_YUG_josip_broz"     		 			  
+		texturefile = "gfx/leaders/YUG/Portrait_YUG_Josip_Broz_Tito.dds"  
+	}
+	#SER - Дража
+	SpriteType = {  
+		name = "GFX_portrait_SER_draza_mihailovic"     		 			  
+		texturefile = "gfx/leaders/SER/Portrait_SER_Draza_Mihailovic.dds"  
+	}
+	#CRO - Павелич
+	SpriteType = {  
+		name = "GFX_portrait_CRO_ante_pavelic"     		 			  
+		texturefile = "gfx/leaders/CRO/Portrait_CRO_Ante_Pavelic.dds"  
+	}
+
 	#NO NAME CHARACTER
 	SpriteType = {
 		name = "GFX_portrait_No_name_character_COM"     

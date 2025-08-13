@@ -176,49 +176,100 @@ country_event = {
 
  	option = {
  		name = YUG_civilwar.07.a
+		custom_effect_tooltip = yug_civilwar.07.a.tt
+		set_cosmetic_tag = SER_civilwar_won
 		
-		hidden_effect = {
+		## hidden_effect = { # Усе тут не працює (перший ефект)
 					
-			remove_ideas = until_death
+		#	remove_ideas = until_death
 
-			CRO = { 
-				transfer_state = 109
-				transfer_state = 103
-				transfer_state = 163
-				transfer_state = 804
+		#	CRO = { 
+		#		transfer_state = 109
+		#		transfer_state = 103
+		#		transfer_state = 163
+		#		transfer_state = 804
 				
-				remove_ideas = until_death
+		#		remove_ideas = until_death
 
-				set_cosmetic_tag = CRO_serbian_occupation
+		#		set_cosmetic_tag = CRO_serbian_occupation
 				
-				set_party_name = {
-					ideology = fascism
-					long_name = CRO_serbian_occupation_party_long
-					name = CRO_serbian_occupation_party
-				}
+		#		set_party_name = {
+		#			ideology = fascism
+		#			long_name = CRO_serbian_occupation_party_long
+		#			name = CRO_serbian_occupation_party
+		#		}
 				
-				set_popularities = { 
-						democratic = 1
-						neutrality = 3
-						fascism = 95
-						communism = 1
-				}
+		#		set_popularities = { 
+			#			democratic = 1
+			#			neutrality = 3
+			#			fascism = 95
+			#			communism = 1
+			#	}
 				
-				set_autonomy = { 
-					target = CRO 
-					autonomy_state = autonomy_integrated_puppet 
-				}
-			}
+			#	set_autonomy = { 
+			#		target = CRO 
+			#		autonomy_state = autonomy_integrated_puppet 
+			#	}
+			#}
 			
-			105 = {
-				add_core_of = SER
-			}
+			# 105 = {
+				#add_core_of = SER
+			#}
+		#}
+			hidden_effect = {
 			
-			news_event = { id = YUG_civilwar.102 hours = 6}
-		set_global_flag = SER_won_civilwar
+				news_event = { id = YUG_civilwar.102 
+											hours = 6 
+							}
+				set_global_flag = SER_won_civilwar
+				promote_character = SER_peter_ii_karadordevic
+
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+						last_election = "1947.06.01"
+						election_frequency = 48
+					}
+
+					set_popularities = {
+						neutrality = 67
+						fascism = 13
+						democratic = 5
+						socialism = 5
+						communism = 10
+					}
+
+					set_party_name = {
+						ideology = neutrality
+						long_name = SER_civilwar_won_party_long
+						name = SER_civilwar_won_party
+					}
+
+					remove_ideas = until_death
+
+					105 = {
+						add_core_of = SER
+					}
+
+					104 = {
+						add_core_of = SER
+					}
+
+					109 = {
+						add_claim_by = SER
+					}
+
+					103 = {
+						add_claim_by = SER
+					}
+
+					163 = {
+						add_claim_by = SER
+					}
+
+			}
 		}
 	}
-}
 
 ## НОВИНИ ##
 
