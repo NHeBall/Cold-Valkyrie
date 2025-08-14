@@ -1,10 +1,10 @@
 characters = {
 
-	CRO_ante_pavelic = {
-		name = CRO_ante_pavelic
+	CRO_mladen_lorkovic = {
+		name = CRO_mladen_lorkovic
 		portraits = {
 			civilian = {
-				large = GFX_portrait_CRO_ante_pavelic
+				large = GFX_portrait_CRO_mladen_lorkovic
 			}
 		}
 	country_leader = {

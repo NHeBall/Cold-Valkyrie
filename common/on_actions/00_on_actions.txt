@@ -80,7 +80,7 @@ on_actions = {
 					}
 					set_global_flag = skip_default_capitulation
 				}
-				#Югославська громадянська війна - Югославське Партизани
+				#Югославська громадянська війна - Югославські Партизани
 				if = {
 					limit = {
 						FROM = {
@@ -104,6 +104,49 @@ on_actions = {
 						country_event = { id = YUG_civilwar.04 }
 					}
 					set_global_flag = skip_default_capitulation
+				}
+				#Югославська громадянська війна - Албанія, Партизани переможили
+				if = {
+					limit = {
+						FROM = {
+							original_tag = YUG
+						}
+						ROOT = {
+							original_tag = ALB
+						}
+					}
+
+					FROM = {
+						white_peace = ROOT
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+						country_event = { id = YUG_civilwar.09 }
+					}
+						set_global_flag = skip_default_capitulation
+					}
+				#Югославська громадянська війна - Албанія, Серби переможили
+				if = {
+					limit = {
+						FROM = {
+							original_tag = SER
+						}
+						ROOT = {
+							original_tag = ALB
+						}
+					}
+
+					FROM = {
+						white_peace = ROOT
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+						country_event = { id = YUG_civilwar.10 }
+					}
+						set_global_flag = skip_default_capitulation
+					}
 				}
 			}
 		}

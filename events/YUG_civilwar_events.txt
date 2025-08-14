@@ -81,7 +81,13 @@ country_event = {
  		name = YUG_civilwar.05.a
 		 hidden_effect = {
 			set_cosmetic_tag = YUG_civilwar_won
-			news_event = { id = YUG_civilwar.100 hours = 6}
+			news_event = { id = YUG_civilwar.100 
+									hours = 6
+						}
+			country_event = {
+				id = YUG_civilwar.08
+							days = 14
+			}
 			set_global_flag = YUG_won_civilwar
 			}
 	}
@@ -221,6 +227,10 @@ country_event = {
 				news_event = { id = YUG_civilwar.102 
 											hours = 6 
 							}
+				country_event = {
+				id = YUG_civilwar.08
+							days = 14
+				}
 				set_global_flag = SER_won_civilwar
 				promote_character = SER_peter_ii_karadordevic
 
@@ -316,4 +326,132 @@ news_event = {
     option = {
         name = YUG_civilwar.102.a
     }
+}
+# Албанія - Партизани
+news_event = { 
+    id = YUG_civilwar.103
+    title = YUG_civilwar.103.t
+    desc = YUG_civilwar.103.desc
+    picture = GFX_news_event_partisan_civilwar
+
+    is_triggered_only = yes
+    major = yes
+    
+    option = {
+        name = YUG_civilwar.103.a
+    }
+}
+
+# Албанія - Серби
+news_event = { 
+    id = YUG_civilwar.104
+    title = YUG_civilwar.104.t
+    desc = YUG_civilwar.104.desc
+    picture = GFX_news_event_cetnik_civilwar
+
+    is_triggered_only = yes
+    major = yes
+    
+    option = {
+        name = YUG_civilwar.104.a
+    }
+}
+
+## ВІЙНА З АЛБАНІЄЮ
+
+country_event = {
+	id = YUG_civilwar.08
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG_civilwar.08"}
+ 	title = YUG_civilwar.08.t
+ 	desc = YUG_civilwar.08.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+        name = YUG_civilwar.08.a
+
+		declare_war_on = { 
+			target = ALB 
+			type = annex_everything
+		}
+	}
+}
+
+# Перемога у війни - Партизани
+country_event = {
+	id = YUG_civilwar.09
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG_civilwar.09"}
+ 	title = YUG_civilwar.09.t
+ 	desc = YUG_civilwar.09.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	
+	option = {
+        name = YUG_civilwar.09.a
+
+		hidden_effect = {
+			news_event = { id = YUG_civilwar.103 
+											hours = 6 
+							}
+		ALB = {
+			transfer_state = 934
+			transfer_state = 44
+			transfer_state = 805
+		}
+
+		YUG = {
+			set_autonomy = { 
+					target = ALB 
+					autonomy_state = autonomy_integrated_puppet 
+				}
+		}
+
+		978 = { add_core_of = YUG 
+		}
+
+		set_global_flag = ALB_lost_war
+		}
+	}
+}
+
+# Перемога у війни - Серби
+country_event = {
+	id = YUG_civilwar.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event YUG_civilwar.10"}
+ 	title = YUG_civilwar.10.t
+ 	desc = YUG_civilwar.10.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	
+	option = {
+        name = YUG_civilwar.10.a
+
+		hidden_effect = {
+			news_event = { id = YUG_civilwar.104 
+											hours = 6 
+							}
+		ALB = {
+			transfer_state = 934
+			transfer_state = 44
+			transfer_state = 805
+		}
+
+		SER = {
+			set_autonomy = { 
+					target = ALB 
+					autonomy_state = autonomy_integrated_puppet 
+				}
+		}
+
+		978 = { add_core_of = SER 
+		}
+
+		set_global_flag = ALB_lost_war
+		}
+	}
 }

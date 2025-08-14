@@ -68,7 +68,7 @@ set_popularities = {
 	neutrality = 2
 }
 
-recruit_character = CRO_ante_pavelic
+recruit_character = CRO_mladen_lorkovic
 
 declare_war_on = {
 		target = YUG

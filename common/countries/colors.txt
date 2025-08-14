@@ -295,8 +295,8 @@ OMA = {
 	color_ui = rgb { 202 131 139 }
 }
 SLO = {
-	color = HSV { 0.1 0.15 0.4 }
-	color_ui = rgb { 138 155 116 }
+	color = rgb { 158  161  188 }
+	color_ui = rgb { 255 255 255 }
 }
 RAJ = {
 	color = rgb { 226  135  40 }
@@ -1192,6 +1192,11 @@ PRB = {
 	color = rgb { 40 110 70 }
 	color_ui = rgb { 40 110 70 }
 }
+SLV = {
+	color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
+
 #ASIA
 AMA = {
 	color = rgb { 20 133 237 }

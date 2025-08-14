@@ -8884,10 +8884,10 @@ spriteTypes = {
 		name = "GFX_portrait_SER_draza_mihailovic"     		 			  
 		texturefile = "gfx/leaders/SER/Portrait_SER_Draza_Mihailovic.dds"  
 	}
-	#CRO - Павелич
+	#CRO - Лоркович
 	SpriteType = {  
-		name = "GFX_portrait_CRO_ante_pavelic"     		 			  
-		texturefile = "gfx/leaders/CRO/Portrait_CRO_Ante_Pavelic.dds"  
+		name = "GFX_portrait_CRO_mladen_lorkovic"     		 			  
+		texturefile = "gfx/leaders/CRO/Portrait_CRO_Mladen_Lorkovic.dds"  
 	}
 
 	#NO NAME CHARACTER
