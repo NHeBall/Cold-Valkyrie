@@ -121,14 +121,14 @@ country_event = {
 					
 			remove_ideas = until_death
 
+			release_puppet = SER
+
 			SER = { 
-				transfer_state = 764
-				transfer_state = 108
-				transfer_state = 107
 				
 				remove_ideas = until_death
 
 				set_cosmetic_tag = SER_croatian_occupation
+				promote_character = SER_ustasa_administration
 				
 				set_party_name = {
 					ideology = fascism

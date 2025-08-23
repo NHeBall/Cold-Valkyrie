@@ -98,6 +98,7 @@ set_popularities = {
 
 recruit_character = SER_draza_mihailovic
 recruit_character = SER_peter_ii_karadordevic
+recruit_character = SER_ustasa_administration
 
 declare_war_on = {
 		target = YUG

@@ -8889,6 +8889,11 @@ spriteTypes = {
 		name = "GFX_portrait_CRO_mladen_lorkovic"     		 			  
 		texturefile = "gfx/leaders/CRO/Portrait_CRO_Mladen_Lorkovic.dds"  
 	}
+	#SER - усташський уряд
+	SpriteType = {  
+		name = "GFX_portrait_SER_ustasa_administration"     		 			  
+		texturefile = "gfx/leaders/SER/Portrait_SER_Ustasa_Administration.dds"  
+	}
 
 	#NO NAME CHARACTER
 	SpriteType = {
