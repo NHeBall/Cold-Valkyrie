@@ -10,3 +10,7 @@ SER_croatian_occupation = {
 	color = rgb { 255  198  226 }
 	color_ui = rgb { 255 198 226 }
 }
+SOV_soviet_republic = { 
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 163 17 31 }
+}
