@@ -1,8 +1,13 @@
 focus_tree = {
     id = GNR_focus
-    replace = yes
 
-    country = { tag = GNR }
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = GNR
+        }
+    }
     default = no
     reset_on_civil_war = yes
 
