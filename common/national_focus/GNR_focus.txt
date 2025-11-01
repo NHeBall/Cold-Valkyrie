@@ -1,0 +1,190 @@
+focus_tree = {
+    id = GNR_focus
+    replace = yes
+
+    country = { tag = GNR }
+    default = no
+    reset_on_civil_war = yes
+
+    focus = {
+        id = GNR_stabilization_start
+        icon = GFX_goal_generic_political_reform
+        x = 6
+        y = 0
+        cost = 1
+        completion_reward = {
+            add_political_power = 150
+        }
+    }
+
+    focus = {
+        id = GNR_slowing_down_inflation
+        prerequisite = { focus = GNR_stabilization_start }
+        icon = GFX_goal_generic_political_reform
+        x = 5
+        y = 1
+        cost = 2
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = GNR_army_under_control
+        prerequisite = { focus = GNR_stabilization_start }
+        icon = GFX_goal_generic_political_reform
+        x = 7
+        y = 1
+        cost = 2
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = GNR_disband_rgk
+        prerequisite = { focus = GNR_slowing_down_inflation }
+        prerequisite = { focus = GNR_army_under_control }
+        icon = GFX_goal_generic_political_reform
+        x = 6
+        y = 2
+        cost = 2
+        completion_reward = {
+            add_stability = 0.05
+            country_event = { id = GNR.1 days = 1 }
+            hidden_effect = {
+                country_event = { id = GNR.2 days = 7 }
+            }
+        }
+    }
+
+    focus = {
+        id = GNR_investigation_start
+        prerequisite = { focus = GNR_disband_rgk }
+        allow_branch = {has_country_flag = GNR_werwolf_found}
+        icon = GFX_goal_generic_political_reform
+        x = 3
+        y = 3
+        cost = 1
+        completion_reward = {
+            add_political_power = 150
+        }
+    }
+
+    focus = {
+        id = GNR_domestic_connections
+        prerequisite = { focus = GNR_investigation_start }
+        icon = GFX_goal_generic_political_reform
+        x = 2
+        y = 4
+        cost = 1
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = GNR_external_connections
+        prerequisite = { focus = GNR_investigation_start }
+        icon = GFX_goal_generic_political_reform
+        x = 4
+        y = 4
+        cost = 1
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = GNR_reassure_public
+        prerequisite = { focus = GNR_domestic_connections }
+        prerequisite = { focus = GNR_external_connections }
+        icon = GFX_goal_generic_political_reform
+        x = 3
+        y = 5
+        cost = 1
+        completion_reward = {
+            add_stability = 0.05
+            country_event = { id = GNR.3 days = 1 }
+        }
+    }
+
+    focus = {
+        id = GNR_monarchists_summary
+        prerequisite = { focus = GNR_disband_rgk }
+        allow_branch = {has_country_flag = GNR_rgk_disbanded}
+        icon = GFX_goal_generic_political_reform
+        x = 6
+        y = 3
+        cost = 4
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = GNR_democrats_summary
+        prerequisite = { focus = GNR_monarchists_summary }
+        icon = GFX_goal_generic_political_reform
+        x = 6
+        y = 4
+        cost = 4
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = GNR_strengthen_mark
+        prerequisite = { focus = GNR_disband_rgk }
+        allow_branch = {has_country_flag = GNR_rgk_disbanded}
+        icon = GFX_goal_generic_political_reform
+        x = 9
+        y = 3
+        cost = 4
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = GNR_cut_regulations
+        prerequisite = { focus = GNR_strengthen_mark }
+        mutually_exclusive = { focus = GNR_subsidize_housing }
+        icon = GFX_goal_generic_political_reform
+        x = 8
+        y = 4
+        cost = 4
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = GNR_subsidize_housing
+        prerequisite = { focus = GNR_strengthen_mark }
+        mutually_exclusive = { focus = GNR_cut_regulations }
+        icon = GFX_goal_generic_political_reform
+        x = 10
+        y = 4
+        cost = 4
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = GNR_congress_start
+        prerequisite = { focus = GNR_democrats_summary }
+        prerequisite = { focus = GNR_cut_regulations focus = GNR_subsidize_housing }
+        available = { has_country_flag = GNR_public_reassured }
+        icon = GFX_goal_generic_political_reform
+        x = 6
+        y = 5
+        cost = 4
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+}

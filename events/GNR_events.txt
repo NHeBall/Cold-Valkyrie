@@ -1,0 +1,45 @@
+add_namespace = GNR
+
+country_event = {
+    id = GNR.1
+    title = GNR.1.t
+    desc = GNR.1.d
+    picture = GFX_report_event_generic_political
+
+    is_triggered_only = yes
+
+    option = {
+        name = GNR.1.a
+        set_country_flag = GNR_rgk_disbanded
+        mark_focus_tree_layout_dirty = yes
+    }
+}
+
+country_event = {
+    id = GNR.2
+    title = GNR.2.t
+    desc = GNR.2.d
+    picture = GFX_report_event_generic_political
+
+    is_triggered_only = yes
+
+    option = {
+        name = GNR.2.a
+        set_country_flag = GNR_werwolf_found
+        mark_focus_tree_layout_dirty = yes
+    }
+}
+
+country_event = {
+    id = GNR.3
+    title = GNR.3.t
+    desc = GNR.3.d
+    picture = GFX_report_event_generic_political
+
+    is_triggered_only = yes
+
+    option = {
+        name = GNR.3.a
+        set_country_flag = GNR_public_reassured
+    }
+}
