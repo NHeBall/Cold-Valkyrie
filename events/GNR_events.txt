@@ -43,3 +43,46 @@ country_event = {
         set_country_flag = GNR_public_reassured
     }
 }
+
+country_event = {
+    id = GNR.4
+    title = GNR.4.t
+    desc = GNR.4.d
+    picture = GFX_report_event_generic_political
+
+    is_triggered_only = yes
+
+    option = {
+        name = GNR.4.a
+        set_country_flag = GNR_congress_started
+        set_variable = { monarchy_democracy_balance = 0
+        mark_focus_tree_layout_dirty = yes
+        }   
+    }
+}
+
+country_event = {
+    id = GNR.5
+    title = GNR.5.t
+    desc = GNR.5.d
+    picture = GFX_report_event_generic_political
+    is_triggered_only = yes
+
+    option = {
+        name = GNR.5.a
+        set_politics = { ruling_party = democratic elections_allowed = yes }
+    }
+}
+
+country_event = {
+    id = GNR.6
+    title = GNR.6.t
+    desc = GNR.6.d
+    picture = GFX_report_event_generic_political
+    is_triggered_only = yes
+
+    option = {
+        name = GNR.6.a
+        set_politics = { ruling_party = neutrality elections_allowed = yes }
+    }
+}

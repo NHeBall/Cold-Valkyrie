@@ -1,0 +1,39 @@
+GNR_congress_category = {
+    GNR_congress_dem = {
+        allowed = { always = yes }
+        visible = { always = yes }
+
+        complete_effect = {
+            if = {
+                limit = { 
+                    check_variable = { var = monarchy_democracy_balance value = 4 }
+                }
+                add_to_variable = { var = monarchy_democracy_balance value = 1 }
+                country_event = { id = gnr.5 }
+            }
+            else = {
+                add_to_variable = { var = monarchy_democracy_balance value = 1 }
+                custom_effect_tooltip = GNR_congress_dem_effect_tt
+            }
+        }
+    }
+
+    GNR_congress_mon = {
+        allowed = { always = yes }
+        visible = { always = yes }
+
+        complete_effect = {
+            if = {
+                limit = { 
+                    NOT = { check_variable = { var = monarchy_democracy_balance value = -3 } }
+                }
+                subtract_from_variable = { var = monarchy_democracy_balance value = 1 }
+                country_event = { id = gnr.6 }
+            }
+            else = {
+                subtract_from_variable = { var = monarchy_democracy_balance value = 1 }
+                custom_effect_tooltip = GNR_congress_dem_effect_tt
+            }
+        }
+    }
+}

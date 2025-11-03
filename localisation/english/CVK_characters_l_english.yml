@@ -238,4 +238,7 @@ CRO_mladen_lorkovic: "Mladen Lorković"
 SER_draza_mihailovic: "Draža Mihailović"
 SER_peter_ii_karadordevic: "Petar II"
 SER_ustasa_administration: "Hrvatska Vojska u Serbije"
- 
+
+# Вставляю сюди бо в новому файлі не працює ніхуя я хз чого
+GNR_congress_category:0 "National Congress"
+GNR_congress_category_desc:0 "§YMonarchy–Democracy Balance§!: [?monarchy_democracy_balance]\n\nAt -5: §GMonarchist§! Regime\nAt +5: §BDemocratic§! Regime"

@@ -1,0 +1,6 @@
+GNR_congress_category = {
+    icon = GFX_decision_generic_political_reform
+    allowed = { always = yes }
+    visible = { has_country_flag = GNR_congress_started }
+    desc = GNR_congress_category_desc
+}
