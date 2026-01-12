@@ -12,6 +12,17 @@ state=
 		add_core_of = SHX
 		add_core_of = CHI
 		add_core_of = PRC
+			PRC = {
+			set_province_controller = 10367
+			set_province_controller = 4074
+			set_province_controller = 1203
+			set_province_controller = 12078
+			set_province_controller = 4538
+			set_province_controller = 10421
+			set_province_controller = 1180
+			set_province_controller = 4634
+			set_province_controller = 7571
+			}
 		victory_points = {
 			1519 3 
 		}

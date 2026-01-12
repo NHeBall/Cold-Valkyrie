@@ -1,0 +1,16 @@
+state={
+	id=982
+	name="STATE_982"
+	provinces={
+		466 
+	}
+	history={
+		owner = UKS
+		add_core_of = UKS
+		add_core_of = USR
+	}
+	manpower=18125
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

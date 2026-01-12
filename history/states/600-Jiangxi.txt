@@ -6,6 +6,11 @@ state={
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = PRC
+		PRC = {
+			set_province_controller = 7004
+			set_province_controller = 4183
+			set_province_controller = 4156
+			}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2

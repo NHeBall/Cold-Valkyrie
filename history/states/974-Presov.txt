@@ -6,9 +6,11 @@ state={
 	}
 	manpower=50000
 	history= {
-		owner = UKS
+		owner = HUN
 		add_core_of = UKS
 		add_core_of = USR
+		add_core_of = SLO
+		add_core_of = HUN
 	}
 	
 	buildings_max_level_factor=1.000

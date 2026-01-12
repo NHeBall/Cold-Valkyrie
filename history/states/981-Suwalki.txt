@@ -1,0 +1,15 @@
+state={
+	id=981
+	name="STATE_981"
+	provinces={
+		3254 
+	}
+	history={
+		owner = GNR
+		add_core_of = GNR
+	}
+	manpower=110100
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

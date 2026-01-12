@@ -2,7 +2,7 @@ state={
 	id=94
 	name="STATE_94"
 	provinces={
-		347 560 3281 6306 
+		347 560 3281 6306 13206
 	}
 	manpower=917200
 	history= {
@@ -10,7 +10,9 @@ state={
 	victory_points = {
 			3281 1 
 		}
-	
+	victory_points = {
+			13206 5 
+		}
 		owner = UKS
 		add_core_of = UKS
 		add_core_of = USR

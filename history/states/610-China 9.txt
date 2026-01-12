@@ -11,6 +11,13 @@ state={
 		add_core_of = CHI
 		add_core_of = MAN
 		add_core_of = PRC
+		CHI = {
+			set_province_controller = 881
+			set_province_controller = 3955
+			set_province_controller = 9768
+			set_province_controller = 11801
+			set_province_controller = 814
+			}
 		buildings = {
 			infrastructure = 2
 		}
